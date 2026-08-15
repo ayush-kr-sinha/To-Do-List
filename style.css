@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: saira;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: orange;
+}
+
+.container{
+    background-color: lightgreen;
+    border-radius: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+    width: 400px;
+    margin: 20px;
+}
+.enter-task{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 10px;
+    background-color: white;
+    border-radius: 20px 20px 0px 0px;
+}
+.task-name{
+    font-weight: bold;
+    line-height: 20px;
+}
+.add-task-div{
+    background-color: white;
+}
+
+.add-task{
+    max-width: 400px;
+    min-width: 0;
+    height: 40px;
+    border-radius: 20px 0px 0px 0px;
+    border: none;
+    outline: none;
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.add-task::placeholder{
+    font-size: 15px;
+    font-weight: bold;
+}
+.buttons{
+    display: flex;
+    align-items: center;
+}
+.tasks{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    flex-direction: column;
+    width: 95%;
+}
+.task-card{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.delete,.plus, .tick-box{
+    cursor: pointer;
+}
+.delete:hover,.plus:hover, .tick-box:hover{
+    scale: 1.05;
+}
+.delete:active,.plus:active, .tick-box:active{
+    scale: 0.95;
+}
